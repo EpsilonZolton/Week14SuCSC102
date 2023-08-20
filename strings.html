@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    Stings page for input validation
+    Ethan Zolton Akocs
+    8/15/2023
+    ezakocs@gmail.com
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Page</title>
+    <!--auto generated html script with a title change above-->
+    <!--now onto real code starting with a css style import-->
+    <link href="stringsStyle.css" rel="stylesheet" type="text/css">
+    <!--importing our code cause we need that-->
+    <script src="code.js"></script>
+</head>
+<body>
+    <h1>welcome to my strings page, have fun :3</h1>
+    <center><img id="pic" src="IMG_9600.png"></center>
+    <center><h5>commicaly large 12 gauge</h5></center>
+    <br>
+    <nav style="text-align: left;">
+        <h2>
+            Navigation
+        </h2>
+        <a href="./index.html"> HOME<br></a>
+        <a href="./boards.html"> BOARDS<br></a>
+        <a href="./strings.html"> STRINGS: you're here!<br></a>
+    </nav>
+    please log in below \/ <br>
+    <br>
+    <div id="loginStatus">Status of login</div><br>
+    <br> <!--this will tell you if your loged in or not-->
+    <form id="credit" onsubmit="return false">
+        First Name: <input type="text" id="fName"><br>
+        Last Name: <input type="text" id="lName"><br>
+        ZIP code: <input type="text" id="zipCode"><br>
+        <br> <!--and here is where you can login-->
+        <input type="submit" onclick="checkCreds()" class="button">
+    </form>
+    <br>
+    <br>
+    <h1>palindrome checker</h1>
+    <br>
+    <div id="palinStatus">Palindrome Status</div>
+    <br>
+    <form id="palinSubmit" onsubmit="return false">
+    Enter palindrome text: <input type="text" id="palinInput">
+    <input type="submit" onclick="checkPalin();" class="button">
+    </form>
+    <br>
+    <br>
+    <h1>Putting it all together</h1>
+    <br>
+    <!--
+        things to make
+        1) string splitter/reverser (done)
+        2) button that will count up till its stopped (eh i did somethign close)
+        3) XOR button gate? yeah that sounds good 
+    -->
+    <div>This button will count up every time its pressed</div><br>
+    <button onclick="toggleCount()" id="counter">start counting</button>
+    <br>
+    <br>
+    <div>enter text it will be cut in half and the halves will be reversed in order</div><br>
+    <form id="chopping" onsubmit="return false">Enter text: <input type="text" id="forwardText"><input type="submit" onclick="textReverser();" class="button"> </form>
+    <div id="swapResult">Reversed text will go here</div><br>
+    <br>
+    <div>These two buttons will act as a XOR gate input</div><br>
+    <button id="button1" onclick="switch1()">Off</button> <button id="button2" onclick="switch2()">Off</button>
+    <div id="btnOutput">Result from gate is: Off</div>
+
+
+
+</body>
+</html>

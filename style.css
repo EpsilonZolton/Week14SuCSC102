@@ -1,0 +1,31 @@
+body{
+    background-image: linear-gradient(to right, grey,darkcyan);
+}
+
+nav{
+    height: 500px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+text-align: center;
+margin-right: 200px;
+}
+
+#memePic{
+    margin-left: 200px;
+    
+}
+
+#bodyText{
+    margin-right: 200px;
+    
+}
+
+header{
+    text-align: center;
+
+}

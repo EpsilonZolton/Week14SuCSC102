@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<!--
+    webpage by E Zolton Akocs
+    18 august 2023
+    ezakocs@gmail.com
+
+-->
+
+
+<!--we code in html here-->
+<html>
+
+<!--just a couple of things not on the main body are laying around here-->
+
+<head>
+    <!--linking a style page for the html file-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--linking java file here to use it-->
+    <script src="code.js"></script>
+    <title>
+        E Zolton A's Page
+        <!--definatly one of the headers of all time-->
+    </title>
+
+</head>
+
+<body style="background-color: darkcyan;">
+    <header style="text-align: center;">
+
+        <h1>Welcome to Zolton's Web Page</h1>
+        <h3>I am your delighted host, Zolton</h3>
+        <br>
+        <nav>
+            <h2>
+                Navigation
+            </h2>
+            <a href="./index.html"> HOME: you're here!<br></a>
+            <a href="./boards.html"> BOARDS<br></a>
+            <a href="./strings.html"> STRINGS<br></a>
+        </nav><br>
+        <!--doing some navigation here to the other page-->
+
+        <!--various header sizes for importance and a funny image to tickle the brain-->
+    </header>
+    <!--marquee was added with some buttons to turn it off and on-->
+    <marquee behavior="scroll" direction="left" id="mymarquee" scrollamount="15"><img id="memePic" src="IMG_4235.png"></marquee>
+
+    <div id="bodyText">
+        <p style="text-align: center;">This is a pharagraph about me. Im learning to get a degree in Robotics and
+            embeded systems degree at UAT and im
+            having fun.</p>
+        <!--i am indeed having fun-->
+        <br>
+        <br>
+        <!--buttons to start and stop the scrolling image-->
+        <button onclick="startFun()" id="startButton">Start</button>
+        <button onclick="stopFun()" id="stopButton">Stop</button>
+        <br>
+        <br>
+        <h2>welcome to my little game of craps</h2>
+        <div id="die1Res">the result of dice 1 will go here</div><br>
+        <div id="die2Res">the result of dice 2 will go here</div><br>
+        <div id="gameRes">the result of the game will go here</div><br>
+        <button onclick="playCraps();">Play Craps?</button><br>
+        <!--update i got the butotn to work apparently i didnt link the java file correctly but i did this time-->
+        <br>
+    </div>
+    <br>
+    <br>
+    <h1>Play sound</h1>
+    <button onclick="playDuck()">Quack!</button>
+    <!--<button onclick="playTest()">Test</button>-->
+    <br>
+    <br>
+    <h1>Favorite games table</h1>
+    <br>
+    <table width="60%" id="gamesTable">
+        <col style="width: 15%">
+        <col style="width: 15%">
+        <col style="width: 15%">
+        <col style="width: 15%">
+        <thead>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Style</th>
+            <th>Rank</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Stray</td>
+                <td>2022</td>
+                <td>Story Adventure</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Clone Drone in the Danger Zone</td>
+                <td>2017</td>
+                <td>Indie Slasher</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Satisfactory</td>
+                <td>2019</td>
+                <td>Open world factory builder</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>VRChat</td>
+                <td>2017</td>
+                <td>Virtual Reality social game</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+    <footer Style="text-align: center;">
+        <h2>Ethan Zolton Akocs</h2>
+        2625 W. Baseline Road<br>
+        Tempe, AZ 85283-1056<br>
+        602-383-8228<br>
+        <!--emergancy contact info just incase-->
+    </footer>
+</body>
+
+</html>

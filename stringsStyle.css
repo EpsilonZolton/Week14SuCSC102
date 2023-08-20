@@ -1,0 +1,19 @@
+body{
+    background-color: grey;
+} /*toning down the brightness of the background  */
+
+#pic{
+    text-align: center;
+}/* pictures should look nice right so i made it look nice*/
+
+h1{
+    text-align: center;
+}/*headers shouls also look nice*/
+
+.button{ /*buttons get to look very fancy yeeeeeeeeesssssss*/
+    width: 100px;
+    height: 20px;
+    background-color: cyan;
+    border-color: darkcyan;
+    border-radius: 7px;
+}
